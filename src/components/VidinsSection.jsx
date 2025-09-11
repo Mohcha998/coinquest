@@ -11,8 +11,29 @@ export default function VidinsSection() {
 
   if (!mounted) return null;
 
+  const testimonials = [
+    {
+      nama: "Merry Riana",
+      profesi: "Entrepreneur, Investor, Content Creator",
+      foto: "/images/merry.jpg",
+      teks: "Buku ini tidak hanya menjelaskan teori dasar, tetapi juga diperkaya dengan inspirasi dari 10 tokoh sukses. Bacalah buku ini, perjuangkan mimpimu, dan berkontribusi untuk negara tercinta kita.",
+    },
+    {
+      nama: "Armand Maulana",
+      profesi: "Musisi",
+      foto: "/images/armand.jpg",
+      teks: "Mengingat usia Vern, “Coinquest” pantas diapresiasi. Karya yang luar biasa, berani, dan menginspirasi di usia yang sangat muda. Jadi, salut untuk Vern atas bukunya!",
+    },
+    {
+      nama: "Cinta Laura Kiehl",
+      profesi: "Aktris & Sociopreneur",
+      foto: "/images/cinta.jpg",
+      teks: "Pada usia yang sangat muda, Vern telah menemukan rahasia untuk menjalani kehidupan yang sukses. Buku ini wajib dibaca!",
+    },
+  ];
+
   return (
-    <section className="w-full bg-gray-100 py-34 px-6">
+    <section className="w-full bg-gray-100 py-12 px-6 lg:pb-[100px] lg:pt-[180px]">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
         
         {/* Bagian Atas: Judul + Video */}
@@ -20,16 +41,11 @@ export default function VidinsSection() {
           
           {/* Kolom kiri: Teks */}
           <div className="flex-1 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-black mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight text-black mb-6">
               MEREKA <br />
               YANG SUDAH <br />
-              TERINSPIRASI
+              <span className="text-sky-500">TERINSPIRASI</span>
             </h2>
-            {/* <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold italic 
-                      py-3 px-8 rounded-full shadow-md 
-                      text-base sm:text-lg">
-              PESAN SEKARANG
-            </button> */}
           </div>
 
           {/* Kolom kanan: Video */}
@@ -69,15 +85,68 @@ export default function VidinsSection() {
           </div>
         </div>
 
-        {/* Bagian Bawah: 3 Kotak Sejajar */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-5">
-          {/* Kotak 1 */}
-          <div className="relative w-full h-[160px] sm:h-[180px] lg:h-[200px] bg-white rounded-[1.5rem] shadow-[6px_6px_0px_#000]" />
-          {/* Kotak 2 */}
-          <div className="relative w-full h-[160px] sm:h-[180px] lg:h-[200px] bg-white rounded-[1.5rem] shadow-[6px_6px_0px_#000]" />
-          {/* Kotak 3 */}
-          <div className="relative w-full h-[160px] sm:h-[180px] lg:h-[200px] bg-white rounded-[1.5rem] shadow-[6px_6px_0px_#000]" />
+        {/* Bagian Bawah */}
+        {/* Mobile: Slider */}
+        <div className="flex sm:hidden overflow-x-auto gap-6 w-full px-4 pb-2">
+          {testimonials.map((item, i) => (
+            <div
+              key={i}
+              className="relative min-w-[300px] max-w-[280px] h-auto bg-white rounded-[1.5rem] 
+                        shadow-[6px_6px_0px_#000] flex-shrink-0 p-4 flex flex-col justify-start"
+            >
+              {/* Foto kanan atas */}
+              <img
+                src={item.foto}
+                alt={item.nama}
+                className="absolute top-3 right-3 w-12 h-12 rounded-full object-cover border-2 border-black"
+              />
+
+              {/* Nama & profesi */}
+              <p className="text-center font-bold text-black">
+                {item.nama} <br />
+                <span className="text-sm font-normal">({item.profesi})</span>
+              </p>
+
+              {/* Teks testimoni */}
+              <p className="text-sm text-center mt-3 leading-snug text-black whitespace-normal break-words">
+                {item.teks}
+              </p>
+            </div>
+          ))}
         </div>
+
+
+
+      {/* Tablet & Desktop: Grid */}
+      <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-2">
+        {testimonials.map((item, i) => (
+          <div
+            key={i}
+            className="relative w-full h-auto bg-white rounded-[1.5rem] 
+                      shadow-[6px_6px_0px_#000] p-6 flex flex-col justify-start"
+          >
+            {/* Foto kanan atas */}
+            <img
+              src={item.foto}
+              alt={item.nama}
+              className="absolute top-4 right-4 w-14 h-14 rounded-full object-cover border-2 border-black"
+            />
+
+            {/* Nama & profesi */}
+            <p className="text-center font-bold text-black">
+              {item.nama} <br />
+              <span className="text-sm font-normal">({item.profesi})</span>
+            </p>
+
+            {/* Teks testimoni */}
+            <p className="text-sm text-center mt-2 text-black leading-snug">
+              {item.teks}
+            </p>
+          </div>
+        ))}
+      </div>
+
+
       </div>
     </section>
   );

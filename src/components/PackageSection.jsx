@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PackageSection() {
   return (
-    <section className="w-full bg-[#42C7D9] py-20 px-6 relative overflow-hidden">
+    <section className="w-full bg-[#42C7D9] pb-2 pt-[40px] lg:py-12 px-10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         
         {/* Kolom kiri: Gambar produk transparan */}
@@ -21,21 +21,21 @@ export default function PackageSection() {
         {/* Kolom kanan: Logo + Teks + Tombol */}
         <div className="flex-1 text-center lg:text-left">
           <div className="mb-6 flex justify-center lg:justify-start">
-            <Image
+            {/* <Image
               src="/images/logo_cq.png"
               alt="Coinquest Logo"
               width={250}
               height={80}
               className="object-contain"
-            />
+            /> */}
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
-            Special Package <br /> Coinquest
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+            Special Package <br /> 
           </h2>
           <p className="text-lg text-white/90 mb-10">
-            Dapatkan paket lengkap Coinquest berisi buku, kartu, totebag,
-            postcard, dan banyak lagi!
+            Dapatkan paket lengkap Coinquest berisi ✅ Coinqust Hardcover Book, ✅ Playing Card, ✅ Ministicker,
+            ✅ Box, ✅ Wristband, ✅ Totebag.
           </p>
 
           {/* <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold italic px-8 py-4 rounded-full shadow-md border-2 border-black text-lg">

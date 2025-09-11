@@ -66,9 +66,9 @@ export default function Hero() {
                 A MOVEMENT
               </span>
             </h1>
-            <button className="hidden md:inline-block mt-8 px-8 py-3 rounded-full border border-black bg-[#FFF201] hover:bg-[#FFF201] text-black font-bold text-xl cursor-pointer transition whitespace-nowrap">
+            {/* <button className="hidden md:inline-block mt-8 px-8 py-3 rounded-full border border-black bg-[#FFF201] hover:bg-[#FFF201] text-black font-bold text-xl cursor-pointer transition whitespace-nowrap">
               PESAN SEKARANG
-            </button>
+            </button> */}
           </div>
   
           {/* === GAMBAR === */}
@@ -88,9 +88,9 @@ export default function Hero() {
   
         {/* === Tombol Mobile (dipindahkan keluar supaya tidak kena mask) === */}
         <div className="md:hidden absolute bottom-6 sm:bottom-20 left-1/2 -translate-x-1/2 z-40">
-          <button className="px-8 py-3 rounded-full border border-black bg-[#FFF201] hover:bg-[#FFF201] text-black font-bold text-base sm:text-lg cursor-pointer transition whitespace-nowrap">
+          {/* <button className="px-8 py-3 rounded-full border border-black bg-[#FFF201] hover:bg-[#FFF201] text-black font-bold text-base sm:text-lg cursor-pointer transition whitespace-nowrap">
             PESAN SEKARANG
-          </button>
+          </button> */}
         </div>
       </section>
     );

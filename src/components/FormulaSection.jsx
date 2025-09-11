@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function FormulaSection() {
   return (
-    <section className="w-full bg-white py-14 px-6 lg:-mb-[100px] relative overflow-hidden">
+    <section className="w-full bg-white pb-[10px] pt-[50px] px-6 lg:-mb-[100px] relative overflow-hidden">
       {/* Background Wrapper */}
       <div className="absolute inset-0">
         {/* Background untuk Phone */}
@@ -57,8 +57,7 @@ export default function FormulaSection() {
         <div className="flex-1 text-center lg:text-left">
           {/* Judul */}
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-sky-500">52 Money </span>
-            <span className="text-black">Formulas</span>
+            <span className="text-sky-500">52 Money Formulas</span>
             <br />
             <span className="text-black">For Teens</span>
           </h2>

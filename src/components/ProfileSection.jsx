@@ -8,13 +8,13 @@ export default function ProfileSection() {
       <div className="relative flex-1 flex items-center justify-center lg:justify-end bg-[#00A0B1] mt-[30px] mb-[30px] lg:mt-[50px] lg:mb-[50px]">
         <div className="overflow-hidden rounded-[30px] lg:rounded-[40px] shadow-lg -mr-0 lg:-mr-[3px]">
           <Image
-            src="/images/profile.jpeg"
+            src="/images/vern2.jpeg"
             alt="Foto Penulis"
             width={400}
             height={300}
             className="
               object-cover rounded-[30px] lg:rounded-tl-[40px] lg:rounded-bl-[40px] 
-              max-h-[400px] lg:max-h-[600px] 
+              max-h-[400px] lg:max-h-[650px] 
               w-[280px] sm:w-[350px] md:w-[400px] lg:w-[550px]
             "
           />
@@ -41,18 +41,15 @@ export default function ProfileSection() {
         {/* Konten teks */}
         <div className="relative z-10 max-w-full sm:max-w-xl lg:max-w-2xl mt-[10px] ml-0 sm:ml-[20px] lg:ml-[40px]">
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#FFD700] -mt-[22px] mb-4 sm:mb-6 leading-snug text-left lg:text-left">
-            TENTANG <br className="hidden lg:block" /> PENULIS
+            TENTANG ALVERNIA LIU
           </h2>
-          <p className="text-white leading-relaxed text-justify font-medium text-sm sm:text-base lg:text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          <h3 className="lg:-mt-[32px] lg:mb-[20px] lg:text-2xl lg:text-bold">Author, Speaker, Leader</h3>
+          <p className="text-white leading-relaxed text-justify font-medium text-sm sm:text-base lg:text-md">
+          Sepanjang masa SMA-nya, Alvernia Liu menemukan kecintaan dan passion-nya pada public speaking. Dalam dua tahun terakhir, ia telah memikat ribuan audiens baik sebagai pembicara maupun MC, berpartisipasi dalam acara-acara bergengsi dan musikal komunitas. <br/><br/>
+
+          Vern telah tampil di berbagai acara bergengsi, seperti InspiraFest, Pidato di acara ASEAN, MC dalam Drama Musikal "Benih yang Bernilai,"  "Kasih Menembus Batas,". Selain itu pada tahun 2024, Vern tampil di panggung TEDx membawakn tema "Small is the New Big,".
+
+          Masa depan membutuhkan lebih banyak suara seperti Vern — suara yang menginspirasi perubahan dan meninggalkan jejak yang abadi di dunia.
           </p>
         </div>
 

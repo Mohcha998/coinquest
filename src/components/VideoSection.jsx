@@ -79,16 +79,15 @@ export default function VideoBox() {
 
         {/* Text di sebelah kanan (atau bawah di mobile) */}
         <div className="flex-1 text-center lg:text-left text-black lg:ml-[40px]">
-          <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-4">Lorem Ipsum</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-4">TENTANG COINQUEST</h2>
           <p className="leading-relaxed text-[12px] md:text-[16px] lg:text-[16px]">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. 
-            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more 
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in 
-            classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 
-            of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
-            treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
-            "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          COINQUEST Adalah sebuah buku dengan 52 formula sederhana untuk membantu remaja memahami pentingnya uang dan cara 
+          mengelolanya dengan bijak. Mengapa 52? Karena dengan satu formula untuk setiap minggu dalam setahun, setiap remaja 
+          bisa mengambil langkah kecil dan konsisten untuk mengelola uang dengan lebih baik.<br/><br/>
+
+          Di usia 15 tahun, Vern (Penulis) sangat bersyukur memiliki kesempatan menulis buku ini dan mewawancarai role-model 
+          hebat. Ia antusias melihat remaja di Indonesia dan di seluruh dunia untuk memulai perjalanan uang pribadi mereka 
+          sendiri melalui Coinquest mereka sendiri.
           </p>
         </div>
       </div>
