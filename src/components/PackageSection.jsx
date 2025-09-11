@@ -34,9 +34,35 @@ export default function PackageSection() {
             Special Package <br /> 
           </h2>
           <p className="text-lg text-white/90 mb-10">
-            Dapatkan paket lengkap Coinquest berisi ✅ Coinqust Hardcover Book, ✅ Playing Card, ✅ Ministicker,
-            ✅ Box, ✅ Wristband, ✅ Totebag.
+            Dapatkan paket lengkap Coinquest berisi :
           </p>
+          <ul className="text-lg text-white/90 mb-10 space-y-2 -mt-[25px] text-left">
+            <li className="flex items-start gap-2">
+                <span>✅</span>
+                <span>Coinquest Hardcover Book</span>
+            </li>
+            <li className="flex items-start gap-2">
+                <span>✅</span>
+                <span>Playing Card</span>
+            </li>
+            <li className="flex items-start gap-2">
+                <span>✅</span>
+                <span>Ministicker</span>
+            </li>
+            <li className="flex items-start gap-2">
+                <span>✅</span>
+                <span>Box</span>
+            </li>
+            <li className="flex items-start gap-2">
+                <span>✅</span>
+                <span>Wristband</span>
+            </li>
+            <li className="flex items-start gap-2">
+                <span>✅</span>
+                <span>Totebag</span>
+            </li>
+            </ul>
+
 
           {/* <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold italic px-8 py-4 rounded-full shadow-md border-2 border-black text-lg">
             PESAN SEKARANG

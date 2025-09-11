@@ -43,7 +43,7 @@ export default function ProfileSection() {
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#FFD700] -mt-[22px] mb-4 sm:mb-6 leading-snug text-left lg:text-left">
             TENTANG ALVERNIA LIU
           </h2>
-          <h3 className="lg:-mt-[32px] lg:mb-[20px] lg:text-2xl lg:text-bold">Author, Speaker, Leader</h3>
+          <h3 className="-mt-[25px] mb-[15px] text-md text-bold lg:-mt-[32px] lg:mb-[20px] lg:text-2xl lg:text-bold">Author, Speaker, Leader</h3>
           <p className="text-white leading-relaxed text-justify font-medium text-sm sm:text-base lg:text-md">
           Sepanjang masa SMA-nya, Alvernia Liu menemukan kecintaan dan passion-nya pada public speaking. Dalam dua tahun terakhir, ia telah memikat ribuan audiens baik sebagai pembicara maupun MC, berpartisipasi dalam acara-acara bergengsi dan musikal komunitas. <br/><br/>
 
