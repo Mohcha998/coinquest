@@ -3,6 +3,12 @@ import Image from "next/image";
 import { FaInstagram, FaTiktok, FaGlobe, FaWhatsapp } from "react-icons/fa";
 
 export default function AboutSection() {
+  // Nomor WA + Pesan default
+  const whatsappNumber = "6285282668940";
+  const whatsappMessage = encodeURIComponent(
+    "Hallo saya dapat info dari website Coinquest, ingin bertanya tentang Coinquest"
+  );
+
   return (
     <section
       className="w-full flex flex-col items-center py-5 sm:py-14 lg:py-20 relative bg-white 
@@ -54,7 +60,7 @@ export default function AboutSection() {
         gap-8 sm:gap-10 lg:gap-0 text-center lg:text-left"
       >
         {/* Kiri: Social Media */}
-        <div className="flex flex-col gap-6 sm:gap-8 items-center lg:items-start w-full lg:w-1/2">
+        <div className="flex flex-col gap-6 sm:gap-8 items-center lg:items-start w-full lg:w-4/5">
           <p className="font-bold text-4xl sm:text-3xl lg:text-4xl text-black -mt-2 sm:-mt-4">
             Follow us
           </p>
@@ -67,16 +73,16 @@ export default function AboutSection() {
               className="flex items-center gap-2 sm:gap-3 hover:text-pink-500 transition"
             >
               <FaInstagram className="text-2xl sm:text-3xl lg:text-4xl" />
-              <span>Instagram</span>
+              <span>@Coinquest.id</span>
             </a>
             <a
               href="https://tiktok.com/@coinquest.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 lg:ml-[100px] sm:gap-3 hover:text-black transition"
+              className="flex items-center gap-2 lg:ml-[80px] sm:gap-3 hover:text-black transition"
             >
               <FaTiktok className="text-2xl sm:text-3xl lg:text-4xl" />
-              <span>TikTok</span>
+              <span>@Coinquest.id</span>
             </a>
             <a
               href="https://coinquest.id"
@@ -85,24 +91,30 @@ export default function AboutSection() {
               className="flex items-center gap-2 sm:gap-3 hover:text-blue-600 transition"
             >
               <FaGlobe className="text-2xl sm:text-3xl lg:text-4xl" />
-              <span>Website</span>
+              <span>Coinquest.id</span>
             </a>
             <a
-              href="https://wa.me/6281234567899"
+              href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 lg:ml-[100px] sm:gap-3 hover:text-green-500 transition"
+              className="flex items-center gap-2 lg:ml-[80px] sm:gap-3 hover:text-green-500 transition"
             >
               <FaWhatsapp className="text-2xl sm:text-3xl lg:text-4xl" />
-              <span>WhatsApp</span>
+              <span className="text-sm lg:text-2xl">0852 8266 8940</span>
             </a>
           </div>
+
+          {/* Alamat - tampil hanya di desktop/tablet */}
+          <span className="hidden lg:block font-bold text-lg text-black mt-2">
+            Jl. Letjen S. Parman, Soho Capital 42nd Floor, RT.3/RW.5, Tj. Duren Utara,  
+            Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11470
+          </span>
         </div>
 
         {/* Kanan: App logo + Download badges */}
         <div className="flex flex-col items-center lg:items-end gap-4 sm:gap-6 w-full lg:w-1/2">
           <div className="flex items-center gap-4">
-            <p className="text-base sm:text-lg lg:text-3xl font-semibold text-black">
+            <p className="text-base sm:text-lg lg:text-[28px] font-semibold text-black">
               Available On
             </p>
 
@@ -111,7 +123,7 @@ export default function AboutSection() {
               alt="Merry Riana App"
               width={140}
               height={140}
-              className="w-[200px] sm:w-[120px] lg:w-[200px] h-auto"
+              className="w-[200px] sm:w-[120px] lg:w-[150px] h-auto"
             />
           </div>
 
@@ -121,7 +133,7 @@ export default function AboutSection() {
             alt="Merry Riana App"
             width={140}
             height={140}
-            className="w-[200px] sm:w-[120px] lg:mr-[25px] lg:w-[100px] lg:mr-[120px] h-auto"
+            className="w-[200px] sm:w-[120px] lg:mr-[25px] lg:w-[140px] lg:mr-[100px] h-auto"
           />
 
           {/* Download badges */}
@@ -153,6 +165,12 @@ export default function AboutSection() {
               />
             </a>
           </div>
+
+          {/* Alamat - tampil hanya di mobile */}
+          <span className="block lg:hidden font-bold text-sm sm:text-base text-black mt-4 text-center">
+            Jl. Letjen S. Parman, Soho Capital 42nd Floor, RT.3/RW.5, Tj. Duren Utara,  
+            Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11470
+          </span>
         </div>
       </div>
     </section>

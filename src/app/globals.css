@@ -35,6 +35,10 @@ body {
       transform: scale(1) !important;
     }
   }
+
+  html {
+    scroll-behavior: smooth;
+  }  
 }
 
 

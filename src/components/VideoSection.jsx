@@ -12,7 +12,7 @@ export default function VideoBox() {
   if (!mounted) return null;
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen px-6 bg-gray-100 overflow-hidden">
+    <div id="tentang" className="relative flex items-center justify-center min-h-screen px-6 bg-gray-100 overflow-hidden">
       {/* Gradient atas biar transisi ke Hero lebih halus */}
       <div className="absolute top-0 left-0 w-full h-24 
         bg-gradient-to-b from-gray-100 to-transparent z-10" />
@@ -43,38 +43,27 @@ export default function VideoBox() {
       {/* Wrapper utama (Video + Text) */}
       <div className="relative z-20 flex flex-col lg:flex-row items-center lg:items-start gap-8 max-w-[1200px] w-full">
         
-        {/* Video Box */}
+        {/* Video Box (thumbnail saja, klik buka popup) */}
         <div
           className="relative w-full max-w-[800px] aspect-video bg-white border-4 border-black rounded-[3.5rem] 
           shadow-[18px_18px_12px_rgba(0,0,0,0.7)] overflow-hidden cursor-pointer"
           onClick={() => setPlay(true)}
         >
-          {!play ? (
-            <div className="relative w-full h-full">
-              <img
-                src="https://img.youtube.com/vi/G82gN2S2i3M/maxresdefault.jpg"
-                alt="Merry Riana Thumbnail"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white/90 rounded-full flex items-center justify-center">
-                  <div className="w-0 h-0 border-t-[8px] sm:border-t-[12px] border-t-transparent 
-                                  border-b-[8px] sm:border-b-[12px] border-b-transparent 
-                                  border-l-[14px] sm:border-l-[20px] border-l-black ml-1 sm:ml-2">
-                  </div>
+          <div className="relative w-full h-full">
+            <img
+              src="https://img.youtube.com/vi/X4A1uFj5sVQ/maxresdefault.jpg"
+              alt="Merry Riana Thumbnail"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white/90 rounded-full flex items-center justify-center">
+                <div className="w-0 h-0 border-t-[8px] sm:border-t-[12px] border-t-transparent 
+                                border-b-[8px] sm:border-b-[12px] border-b-transparent 
+                                border-l-[14px] sm:border-l-[20px] border-l-black ml-1 sm:ml-2">
                 </div>
               </div>
             </div>
-          ) : (
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/G82gN2S2i3M?autoplay=1&rel=0"
-              title="Merry Riana Video"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
-          )}
+          </div>
         </div>
 
         {/* Text di sebelah kanan (atau bawah di mobile) */}
@@ -91,6 +80,31 @@ export default function VideoBox() {
           </p>
         </div>
       </div>
+
+      {/* Popup Video */}
+      {play && (
+      <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999] px-4">
+        {/* Tombol close di luar video */}
+        <button
+          className="absolute top-6 right-6 bg-black/60 hover:bg-black/80 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl z-[10000]"
+          onClick={() => setPlay(false)}
+        >
+          ✕
+        </button>
+
+        <div className="relative w-full max-w-4xl aspect-video bg-black rounded-xl overflow-hidden">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/X4A1uFj5sVQ?si=YM0fFMoiiC2pyFJR"
+            title="Merry Riana Video"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+    )}
+
     </div>
   );
 }

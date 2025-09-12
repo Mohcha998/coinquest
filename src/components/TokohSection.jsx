@@ -13,7 +13,7 @@ export default function TokohSection() {
     { nama: "Sutradara", gambar: "/images/t7.png" },
     { nama: "Staf Khusus Presiden Ri ke-7", gambar: "/images/t8.png" },
     { nama: "Founder Foreign Policy Community Indonesia", gambar: "/images/t9.png" },
-    { nama: "Pengusaha", gambar: "/images/t10.png" },
+    { nama: "Co-CEO Lemonilo", gambar: "/images/t10.png" },
   ];
 
   return (

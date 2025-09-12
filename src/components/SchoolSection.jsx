@@ -41,7 +41,7 @@ export default function SchoolSection() {
   }, [selectedIndex, images.length]);
 
   return (
-    <section className="relative w-full flex flex-col items-center py-10 sm:py-12">
+    <section id="sekola" className="relative w-full flex flex-col items-center py-10 sm:py-12">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image

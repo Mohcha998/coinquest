@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen md:h-[59vh] lg:h-screen bg-[url('/images/background.jpeg')] bg-cover bg-center flex items-center overflow-hidden">
+    <section id="hero" className="relative w-full h-screen md:h-[59vh] lg:h-screen bg-[url('/images/background.jpeg')] bg-cover bg-center flex items-center overflow-hidden">
       {/* Overlay putih */}
       <div className="absolute inset-0 bg-white/75" />
 

@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <header
       className="
-        absolute top-5 
+        fixed top-5 
         w-[90%] max-w-[1300px] 
         flex items-center justify-between 
         px-4 sm:px-6 md:px-10 
@@ -36,28 +36,28 @@ export default function Navbar() {
       <nav className="hidden md:flex">
         <ul className="flex flex-row gap-8 list-none m-0 p-0">
           <li>
-            <a href="#" className="text-black text-[18px] hover:text-blue-600">
-              Home
+            <a href="#hero" className="text-black text-[18px] hover:text-blue-600">
+              Beranda
             </a>
           </li>
           <li>
-            <a href="#" className="text-black text-[18px] hover:text-blue-600">
-              Penulis
+            <a href="#tentang" className="text-black text-[18px] hover:text-blue-600">
+            Tentang Coinquest
             </a>
           </li>
           <li>
-            <a href="#" className="text-black text-[18px] hover:text-blue-600">
-              Buku
+            <a href="#testi" className="text-black text-[18px] hover:text-blue-600">
+            Testimoni
             </a>
           </li>
           <li>
-            <a href="#" className="text-black text-[18px] hover:text-blue-600">
-              Event
+            <a href="#package" className="text-black text-[18px] hover:text-blue-600">
+            Special Package
             </a>
           </li>
           <li>
-            <a href="#" className="text-black text-[18px] hover:text-blue-600">
-              Testimoni
+            <a href="#sekola" className="text-black text-[18px] hover:text-blue-600">
+            Event
             </a>
           </li>
         </ul>
@@ -90,28 +90,28 @@ export default function Navbar() {
         <nav className="fixed top-[80px] left-0 w-full bg-white/95 border-t-2 border-black flex flex-col items-center py-3 rounded-b-lg md:hidden z-[9999] shadow-lg">
           <ul className="flex flex-col gap-4 list-none m-0 p-0">
             <li>
-              <a href="#" className="text-black text-[18px] hover:text-blue-600">
-                Home
+              <a href="#hero" className="text-black text-[18px] hover:text-blue-600">
+              Beranda
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-[18px] hover:text-blue-600">
-                Penulis
+              <a href="#tentang" className="text-black text-[18px] hover:text-blue-600">
+              Tentang Coinquest
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-[18px] hover:text-blue-600">
-                Buku
+              <a href="#testi" className="text-black text-[18px] hover:text-blue-600">
+              Testimoni
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-[18px] hover:text-blue-600">
-                Event
+              <a href="#package" className="text-black text-[18px] hover:text-blue-600">
+              Special Package
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-[18px] hover:text-blue-600">
-                Testimoni
+              <a href="#sekola" className="text-black text-[18px] hover:text-blue-600">
+              Event
               </a>
             </li>
           </ul>

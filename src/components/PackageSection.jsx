@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PackageSection() {
   return (
-    <section className="w-full bg-[#42C7D9] pb-2 pt-[40px] lg:py-12 px-10 relative overflow-hidden">
+    <section id="package" className="w-full bg-[#42C7D9] pb-2 pt-[40px] lg:py-12 px-10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         
         {/* Kolom kiri: Gambar produk transparan */}
@@ -30,36 +30,36 @@ export default function PackageSection() {
             /> */}
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h2 className="text-4xl -mt-[40px] sm:text-4xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
             Special Package <br /> 
           </h2>
-          <p className="text-lg text-white/90 mb-10">
+          {/* <p className=" text-white/90 mb-10 text-4xl">
             Dapatkan paket lengkap Coinquest berisi :
-          </p>
-          <ul className="text-lg text-white/90 mb-10 space-y-2 -mt-[25px] text-left">
+          </p> */}
+          <ul className="text-lg mt-[20px] text-white/90 mb-10 space-y-2 -mt-[25px] text-left lg:mt-[20px]">
             <li className="flex items-start gap-2">
-                <span>✅</span>
-                <span>Coinquest Hardcover Book</span>
+                <span className="text-2xl lg:text-4xl">✅</span>
+                <span className="text-2xl lg:text-4xl">Coinquest Hardcover Book</span>
             </li>
             <li className="flex items-start gap-2">
-                <span>✅</span>
-                <span>Playing Card</span>
+                <span className="text-2xl lg:text-4xl">✅</span>
+                <span className="text-2xl lg:text-4xl">Playing Card</span>
             </li>
             <li className="flex items-start gap-2">
-                <span>✅</span>
-                <span>Ministicker</span>
+                <span className="text-2xl lg:text-4xl">✅</span>
+                <span className="text-2xl lg:text-4xl">Ministicker</span>
             </li>
             <li className="flex items-start gap-2">
-                <span>✅</span>
-                <span>Box</span>
+                <span className="text-2xl lg:text-4xl">✅</span>
+                <span className="text-2xl lg:text-4xl">Box</span>
             </li>
             <li className="flex items-start gap-2">
-                <span>✅</span>
-                <span>Wristband</span>
+                <span className="text-2xl lg:text-4xl">✅</span>
+                <span className="text-2xl lg:text-4xl">Wristband</span>
             </li>
             <li className="flex items-start gap-2">
-                <span>✅</span>
-                <span>Totebag</span>
+                <span className="text-2xl lg:text-4xl">✅</span>
+                <span className="text-2xl lg:text-4xl">Tote Bag</span>
             </li>
             </ul>
 
