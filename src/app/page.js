@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* ✅ Floating WhatsApp Button pakai icon */}
       <a
-        href="https://wa.me/6281234567890?text=Hallo%20saya%20dapat%20info%20dari%20website%20Coinquest,%20ingin%20bertanya%20tentang%20Coinquest"
+        href="https://wa.me/6285282668940?text=Hallo%20saya%20dapat%20info%20dari%20website%20Coinquest,%20ingin%20bertanya%20tentang%20Coinquest"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 z-[9999] bg-green-500 text-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform"
