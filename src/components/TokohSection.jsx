@@ -4,16 +4,16 @@ import Image from "next/image";
 
 export default function TokohSection() {
   const tokoh = [
-    { nama: "Tokoh 1", gambar: "/images/t1.png" },
-    { nama: "Tokoh 2", gambar: "/images/t2.png" },
-    { nama: "Tokoh 3", gambar: "/images/t3.png" },
-    { nama: "Tokoh 4", gambar: "/images/t4.png" },
-    { nama: "Tokoh 5", gambar: "/images/t5.png" },
-    { nama: "Tokoh 6", gambar: "/images/t6.png" },
-    { nama: "Tokoh 7", gambar: "/images/t7.png" },
-    { nama: "Tokoh 8", gambar: "/images/t8.png" },
-    { nama: "Tokoh 9", gambar: "/images/t9.png" },
-    { nama: "Tokoh 10", gambar: "/images/t10.png" },
+    { nama: "Artis & Pengusaha", gambar: "/images/t1.png" },
+    { nama: "Penyanyi", gambar: "/images/t2.png" },
+    { nama: "Aktris & Sociopreneur", gambar: "/images/t3.png" },
+    { nama: "Entrepreneur, Investor, Content Creator", gambar: "/images/t4.png" },
+    { nama: "Vokalis Band ‘GIGI’", gambar: "/images/t5.png" },
+    { nama: "CEO & Founder Indodax", gambar: "/images/t6.png" },
+    { nama: "Sutradara", gambar: "/images/t7.png" },
+    { nama: "Staf Khusus Presiden Ri ke-7", gambar: "/images/t8.png" },
+    { nama: "Founder Foreign Policy Community Indonesia", gambar: "/images/t9.png" },
+    { nama: "Pengusaha", gambar: "/images/t10.png" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function TokohSection() {
       {/* Blur atas */}
       <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white/80 to-transparent pointer-events-none z-10"></div>
 
-      {/* Blur bawah dengan warna #82D0DC */}
+      {/* Blur bawah */}
       <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#82D0DC]/90 to-transparent pointer-events-none z-10"></div>
 
       {/* Judul */}
@@ -43,28 +43,31 @@ export default function TokohSection() {
           grid-cols-2 gap-6 px-4
           sm:grid-cols-3 sm:gap-8
           md:grid-cols-5 md:gap-[60px] md:px-0
-          justify-center mt-10 max-w-5xl mx-auto
+          justify-center mt-10 max-w-6xl mx-auto
         "
       >
         {tokoh.map((item, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div key={index} className="flex flex-col items-center text-center">
+            {/* Foto tokoh */}
             <div
               className="
-                w-[150px] h-[150px]
-                sm:w-[150px] sm:h-[150px]
+                w-[140px] h-[140px]
+                sm:w-[160px] sm:h-[160px]
                 md:w-[200px] md:h-[200px]
-                flex items-center justify-center bg-white/0
+                flex items-center justify-center
               "
             >
               <Image
                 src={item.gambar}
                 alt={item.nama}
-                width={170}
-                height={170}
+                width={200}
+                height={200}
                 className="w-full h-full object-contain"
               />
             </div>
-            <p className="-mt-4 text-sm sm:text-base md:text-lg lg:-mt-[20px] font-medium">
+
+            {/* Pekerjaan/jabatan */}
+            <p className="-mt-[20px] lg:-mt-[30px] text-[13px] sm:text-sm md:text-base text-gray-800 italic font-medium leading-snug max-w-[180px]">
               {item.nama}
             </p>
           </div>
