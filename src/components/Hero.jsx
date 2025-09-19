@@ -27,36 +27,45 @@ export default function Hero() {
           text-white space-y-6 
           flex flex-col justify-center items-center text-center
         ">
-          <h2 className="
-            text-xl sm:text-2xl md:text-3xl 
-            lg:ml-[40px] lg:text-[36px] lg:mb-[150px] 
-            font-bold leading-snug max-w-lg tracking-wider
-          ">
-            <span style={{ fontFamily: "var(--font-moresugar)" }}>“</span>
-            BUILDING A{" "}
-            <span
-              className="text-[#f29fcb]"
-              style={{ fontFamily: "var(--font-moresugar)" }}
-            >
-              GENERATION
-            </span>{" "}
-            THAT IS NOT ONLY<br />
-            SMART WITH{" "}
-            <span
-              className="text-[#55e09a]"
-              style={{ fontFamily: "var(--font-moresugar)" }}
-            >
-              MONEY
-            </span>{" "}
-            , BUT WISE WITH{" "}
-            <span
-              className="text-[#f9d44d]"
-              style={{ fontFamily: "var(--font-moresugar)" }}
-            >
-              PURPOSE
-            </span>
-            .<span style={{ fontFamily: "var(--font-moresugar)" }}>“</span>
-          </h2>
+          <h2
+  className="
+    text-xl sm:text-2xl md:text-3xl 
+    lg:ml-[40px] lg:text-[36px] lg:mb-[150px] 
+    font-bold leading-snug max-w-lg tracking-wider
+  "
+>
+  <span style={{ fontFamily: "var(--font-moresugar)" }}>“</span>
+  BUILDING A{" "}
+  <span
+    className="text-[#f29fcb]"
+    style={{ fontFamily: "var(--font-moresugar)" }}
+  >
+    GENERATION
+  </span>{" "}
+  THAT IS NOT ONLY<br />
+  SMART WITH{" "}
+  <span
+    className="text-[#55e09a]"
+    style={{ fontFamily: "var(--font-moresugar)" }}
+  >
+    MONEY
+  </span>{" "}
+  , BUT WISE WITH{" "}
+  <span
+    className="text-[#f9d44d] relative inline-block"
+    style={{ fontFamily: "var(--font-moresugar)" }}
+  >
+    PURPOSE
+    {/* Tanda tangan */}
+    <img
+      src="/images/ttd2.png"
+      alt="Tanda Tangan"
+      className="absolute left-[70px] top-[2px] lg:left-[150px] lg:top-[20px] lg:w-[1000px] lg:h-auto bottom-[-35px] w-[120px] h-auto"
+    />
+  </span>
+  .<span style={{ fontFamily: "var(--font-moresugar)" }}>“</span>
+</h2>
+
 
           {/* === Logo + Tombol (hanya desktop) === */}
           <div className="
