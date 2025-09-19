@@ -81,28 +81,33 @@ export default function Hero() {
               />
             </span>
 
-            <button
-              className="
-                w-[200px] sm:w-[230px] md:w-[250px] 
-                py-3 rounded-full
-                shadow-md border border-gray-400
-                font-bold text-lg sm:text-xl md:text-2xl
-                relative
-              "
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.6)",
-                color: "#FFF201",
-                fontFamily: "var(--font-moresugar)",
-                textShadow: `
-                  1px 1px 0 #000,
-                  -1px -1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px 1px 0 #000
-                `,
-              }}
-            >
-              BUY NOW
-            </button>
+            <a
+  href="https://shopee.co.id/BUKU-COINQUEST-(52-Money-Formulas-For-Teens)-i.110023575.28173457196"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    w-[200px] sm:w-[230px] md:w-[250px] 
+    py-3 rounded-full
+    shadow-md border border-gray-400
+    font-bold text-lg sm:text-xl md:text-2xl
+    relative text-center
+    flex justify-center items-center
+  "
+  style={{
+    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    color: "#FFF201",
+    fontFamily: "var(--font-moresugar)",
+    textShadow: `
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000
+    `,
+  }}
+>
+  BUY NOW
+</a>
+
           </div>
         </div>
 
@@ -131,13 +136,17 @@ export default function Hero() {
               />
             </span>
 
-            <button
+            <a
+              href="https://shopee.co.id/BUKU-COINQUEST-(52-Money-Formulas-For-Teens)-i.110023575.28173457196"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 w-[180px] sm:w-[200px] md:w-[220px] 
                 py-2 sm:py-3 rounded-full
                 shadow-md border border-gray-400
                 font-bold text-base sm:text-lg md:text-xl
-                relative
+                relative text-center
+                flex justify-center items-center
               "
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.6)",
@@ -152,7 +161,7 @@ export default function Hero() {
               }}
             >
               BUY NOW
-            </button>
+            </a>
           </div>
         </div>
       </div>
