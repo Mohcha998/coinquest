@@ -112,7 +112,7 @@ export default function Hero() {
             src="/images/vernbk2.png"
             alt="Book"
             className="
-              w-[400px] sm:w-[320px] md:w-[400px] lg:w-[420px] 
+              w-[300000px] sm:w-[320px] md:w-[400px] lg:w-[420px] 
               object-contain relative z-10
             "
           />
