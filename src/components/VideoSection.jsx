@@ -68,8 +68,24 @@ export default function VideoBox() {
 
         {/* Text di sebelah kanan (atau bawah di mobile) */}
         <div className="flex-1 text-center lg:text-left text-black lg:ml-[40px]">
-          <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-4">TENTANG COINQUEST</h2>
-          <p className="leading-relaxed text-[12px] md:text-[16px] lg:text-[16px]">
+        <div className="flex items-center gap-4">
+          <h2
+            className="text-2xl sm:text-3xl lg:text-3xl font-bold text-[#5DD5E4]"
+            style={{ fontFamily: "var(--font-moresugar)" }}
+          >
+            TENTANG
+          </h2>
+
+          <span className="inline-block">
+            <img
+              src="/images/logo_cq.png"
+              alt="COINQUEST Logo"
+              className="h-16 sm:h-20 w-auto lg:w-[150px] lg:h-auto object-contain"
+            />
+          </span>
+        </div>
+
+          <p className="leading-relaxed text-[12px] md:text-[16px] lg:text-[16px] lg:mt-[20px]">
           COINQUEST Adalah sebuah buku dengan 52 formula sederhana untuk membantu remaja memahami pentingnya uang dan cara 
           mengelolanya dengan bijak. Mengapa 52? Karena dengan satu formula untuk setiap minggu dalam setahun, setiap remaja 
           bisa mengambil langkah kecil dan konsisten untuk mengelola uang dengan lebih baik.<br/><br/>

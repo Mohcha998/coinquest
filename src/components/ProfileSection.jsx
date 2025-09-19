@@ -3,70 +3,83 @@ import Image from "next/image";
 
 export default function ProfileSection() {
   return (
-    <section className="relative flex flex-col lg:flex-row items-stretch w-full min-h-[500px] bg-[#00A0B1] overflow-hidden ">
-      {/* Kolom kiri - Foto */}
-      <div className="relative flex-1 flex items-center justify-center lg:justify-end bg-[#00A0B1] mt-[30px] mb-[30px] lg:mt-[50px] lg:mb-[50px]">
-        <div className="overflow-hidden rounded-[30px] lg:rounded-[40px] shadow-lg -mr-0 lg:-mr-[3px]">
-          <Image
-            src="/images/vern2.jpeg"
-            alt="Foto Penulis"
-            width={400}
-            height={300}
-            className="
-              object-cover rounded-[30px] lg:rounded-tl-[40px] lg:rounded-bl-[40px] 
-              max-h-[400px] lg:max-h-[650px] 
-              w-[280px] sm:w-[350px] md:w-[400px] lg:w-[550px]
-            "
-          />
+    <section className="relative w-full bg-[#A5D6E6] flex flex-col lg:flex-row items-stretch min-h-[600px] overflow-hidden">
+      
+      {/* === KIRI: Nama + Foto === */}
+      <div className="flex-1 flex flex-col justify-center relative px-2">
+        {/* ALVERNIA + LIU dalam 1 kolom */}
+        <div className="flex flex-col leading-none">
+          <h1
+            className="text-[100px] sm:text-[120px] lg:text-[180px] font-extrabold text-white"
+            style={{ fontFamily: "var(--font-impact)" }}
+          >
+            ALVERNIA
+          </h1>
+          
+        </div>
+
+        {/* LIU + Tagline + Foto */}
+        <div className="flex flex-row items-start w-full">
+          {/* === Kiri: LIU + Tagline === */}
+          <div className="flex flex-col mr-6">
+            <h1
+              className="text-[100px] sm:text-[120px] lg:text-[180px] font-extrabold text-white leading-none"
+              style={{ fontFamily: "var(--font-impact)" }}
+            >
+              LIU
+            </h1>
+            <div className="flex flex-col text-[#cbf0f4] font-extrabold uppercase leading-none">
+              <span className="text-[32px] sm:text-[36px] lg:text-[60px] leading-none tracking-wider"
+              style={{ fontFamily: "var(--font-impact)" }}
+              >
+                AUTHOR
+              </span>
+              <span className="text-[32px] sm:text-[36px] lg:text-[60px] leading-none"
+              style={{ fontFamily: "var(--font-impact)" }}
+              >
+                SPEAKER
+              </span>
+              <span className="text-[32px] sm:text-[36px] lg:text-[60px] leading-none tracking-[4px] lg:tracking-[8px]"
+              style={{ fontFamily: "var(--font-impact)" }}
+              >
+                LEADER
+              </span>
+            </div>
+          </div>
+
+          {/* === Kanan: Foto === */}
+          <div className="flex-1 flex justify-center items-center">
+            <div className="overflow-hidden rounded-[20px] lg:rounded-[25px] shadow-lg">
+              <Image
+                src="/images/vern2.jpeg"
+                alt="Foto Alvernia Liu"
+                width={650}
+                height={400}
+                className="object-cover w-[550] h-[180] lg:w-[650px] lg:h-[350px]"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Kolom kanan - Background bergelombang + teks */}
-      <div className="relative flex-1 bg-[#66C7D5] flex flex-col justify-center px-4 sm:px-6 lg:px mt-[40px] mb-[30px] lg:mt-[70px] lg:mb-[50px]">
-        {/* Wave atas */}
-        <div className="absolute top-0 left-0 right-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 120"
-            className="w-full h-[50px] lg:h-[70px] text-[#00A0B1]"
-            preserveAspectRatio="none"
-          >
-            <path
-              fill="currentColor"
-              d="M0,64L60,74.7C120,85,240,107,360,106.7C480,107,600,85,720,74.7C840,64,960,64,1080,69.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-            ></path>
-          </svg>
-        </div>
-
-        {/* Konten teks */}
-        <div className="relative z-10 max-w-full sm:max-w-xl lg:max-w-2xl mt-[10px] ml-0 sm:ml-[20px] lg:ml-[40px]">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#FFD700] -mt-[22px] mb-4 sm:mb-6 leading-snug text-left lg:text-left">
-            TENTANG ALVERNIA LIU
-          </h2>
-          <h3 className="-mt-[25px] mb-[15px] text-md text-bold lg:-mt-[32px] lg:mb-[20px] lg:text-2xl lg:text-bold">Author, Speaker, Leader</h3>
-          <p className="text-white leading-relaxed text-justify font-medium text-sm sm:text-base lg:text-md">
-          Sepanjang masa SMA-nya, Alvernia Liu menemukan kecintaan dan passion-nya pada public speaking. Dalam dua tahun terakhir, ia telah memikat ribuan audiens baik sebagai pembicara maupun MC, berpartisipasi dalam acara-acara bergengsi dan musikal komunitas. <br/><br/>
-
-          Vern telah tampil di berbagai acara bergengsi, seperti InspiraFest, Pidato di acara ASEAN, MC dalam Drama Musikal "Benih yang Bernilai,"  "Kasih Menembus Batas,". Selain itu pada tahun 2024, Vern tampil di panggung TEDx membawakn tema "Small is the New Big,".
-
-          Masa depan membutuhkan lebih banyak suara seperti Vern — suara yang menginspirasi perubahan dan meninggalkan jejak yang abadi di dunia.
-          </p>
-        </div>
-
-        {/* Wave bawah */}
-        <div className="absolute bottom-0 left-0 right-0 rotate-180">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 120"
-            className="w-full h-[50px] lg:h-[70px] text-[#00A0B1]"
-            preserveAspectRatio="none"
-          >
-            <path
-              fill="currentColor"
-              d="M0,64L60,74.7C120,85,240,107,360,106.7C480,107,600,85,720,74.7C840,64,960,64,1080,69.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-            ></path>
-          </svg>
-        </div>
+      {/* === KANAN: Deskripsi === */}
+      <div className="flex-1 flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-5 ">
+        <p className="text-white text-base sm:text-lg lg:text-xl leading-relaxed text-justify font-medium">
+          Sepanjang masa SMA-nya, Alvernia Liu menemukan kecintaan dan
+          passion-nya pada public speaking. Dalam dua tahun terakhir, ia telah
+          memikat ribuan audiens baik sebagai pembicara maupun MC,
+          berpartisipasi dalam acara-acara bergengsi dan musikal komunitas.
+          <br />
+          <br />
+          Vern telah tampil di berbagai acara bergengsi, seperti InspiraFest,
+          Pidato di acara ASEAN, MC dalam Drama Musikal "Benih yang Bernilai,"
+          "Kasih Menembus Batas,". Selain itu pada tahun 2024, Vern tampil di
+          panggung TEDx membawakan tema "Small is the New Big,".
+          <br />
+          <br />
+          Masa depan membutuhkan lebih banyak suara seperti Vern — suara yang
+          menginspirasi perubahan dan meninggalkan jejak yang abadi di dunia.
+        </p>
       </div>
     </section>
   );
