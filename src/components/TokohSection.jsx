@@ -28,10 +28,14 @@ export default function TokohSection() {
       <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#82D0DC]/90 to-transparent pointer-events-none z-10"></div>
 
       {/* Judul */}
-      <h2 className="relative z-20 text-2xl sm:text-3xl md:text-5xl font-bold -mt-[30px] flex flex-col">
+      <h2 className="relative z-20 text-2xl sm:text-3xl md:text-5xl font-bold -mt-[30px] flex flex-col"
+        style={{ fontFamily: "var(--font-moresugar)" }}
+      >
         CERITA & PENGALAMAN NYATA
       </h2>
-      <h3 className="relative z-20 text-2xl sm:text-3xl md:text-5xl font-bold text-sky-500 mt-1">
+      <h3 className="relative z-20 text-2xl sm:text-3xl md:text-5xl font-bold text-sky-500 mt-1"
+        style={{ fontFamily: "var(--font-moresugar)" }}
+      >
         DARI 10 TOKOH INSPIRATIF
       </h3>
 

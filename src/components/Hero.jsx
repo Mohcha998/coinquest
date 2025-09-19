@@ -58,7 +58,7 @@ export default function Hero() {
     PURPOSE
     {/* Tanda tangan */}
     <img
-      src="/images/ttd2.png"
+      src="/images/ttd3.png"
       alt="Tanda Tangan"
       className="absolute left-[70px] top-[2px] lg:left-[150px] lg:top-[20px] lg:w-[1000px] lg:h-auto bottom-[-35px] w-[120px] h-auto"
     />
@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="
             hidden md:flex flex-col sm:flex-row 
             items-center justify-center gap-8 
-            pt-6 lg:-mb-[180px]
+            pt-6 lg:-mb-[120px]
           ">
             <span className="inline-block">
               <img
@@ -112,7 +112,7 @@ export default function Hero() {
             src="/images/vernbk2.png"
             alt="Book"
             className="
-              w-[260px] sm:w-[300px] md:w-[400px] lg:w-[460px] 
+              w-[300px] sm:w-[320px] md:w-[400px] lg:w-[420px] 
               object-contain relative z-10
             "
           />

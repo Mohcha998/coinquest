@@ -30,7 +30,9 @@ export default function PackageSection() {
             /> */}
           </div>
 
-          <h2 className="text-4xl -mt-[40px] sm:text-4xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h2 className="text-4xl -mt-[40px] sm:text-4xl lg:text-6xl font-extrabold text-white mb-6 leading-tight"
+            style={{ fontFamily: "var(--font-moresugar)" }}
+          >
             Special Package <br /> 
           </h2>
           {/* <p className=" text-white/90 mb-10 text-4xl">

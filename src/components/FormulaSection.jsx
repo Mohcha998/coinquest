@@ -57,9 +57,17 @@ export default function FormulaSection() {
         <div className="flex-1 text-center lg:text-left">
           {/* Judul */}
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-sky-500">52 Money Formulas</span>
+            <span className="text-sky-500"
+                style={{ fontFamily: "var(--font-moresugar)" }}
+            >
+              52 Money Formulas
+            </span>
             <br />
-            <span className="text-black">For Teens</span>
+            <span className="text-black"
+              style={{ fontFamily: "var(--font-moresugar)" }}
+            >
+                  For Teens
+            </span>
           </h2>
 
           {/* List */}

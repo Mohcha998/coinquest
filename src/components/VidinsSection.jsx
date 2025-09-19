@@ -40,7 +40,9 @@ export default function VidinsSection() {
         <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
           {/* Kolom kiri: Teks */}
           <div className="flex-1 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight text-black mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight text-black mb-6"
+                style={{ fontFamily: "var(--font-moresugar)" }}
+              >
               MEREKA <br />
               YANG SUDAH <br />
               <span className="text-sky-500">TERINSPIRASI</span>

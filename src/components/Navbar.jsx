@@ -10,7 +10,7 @@ export default function Navbar() {
       className="
         fixed top-0 left-0 right-0 w-full z-50
         shadow-md
-        bg-[url('/images/head_mbls.png')]
+        bg-[url('/images/head_mb2.png')]
         bg-white
         lg:bg-[url('/images/heading2.png')] bg-cover
         bg-[position:100%_100%]   <!-- 50% X (horizontal), 20% Y (vertical) -->
