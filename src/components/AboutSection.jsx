@@ -53,7 +53,7 @@ export default function AboutSection() {
       <div
         className="relative z-10 mt-[250px] sm:mt-16 lg:mt-28 w-[94%] sm:w-[95%] lg:w-[85%] 
         rounded-[16px] sm:rounded-[24px] lg:rounded-[36px] border-2 border-black 
-        bg-gradient-to-r from-[#FFF201] to-[#42C7D9]
+        bg-gradient-to-r from-[#78CFDB] via-[#FFF3DA] to-[#E7F5B3]
         shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:shadow-[6px_6px_0px_rgba(0,0,0,1)] lg:shadow-[12px_12px_0px_rgba(0,0,0,1)] 
         px-4 sm:px-6 lg:px-16 py-8 sm:py-10 lg:py-14 
         flex flex-col lg:flex-row items-center justify-between 

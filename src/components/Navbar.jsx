@@ -39,7 +39,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#hero"
-                className="text-black text-[16px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[16px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Beranda
@@ -48,7 +48,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#tentang"
-                className="text-black text-[16px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[16px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Tentang Coinquest
@@ -57,7 +57,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#testi"
-                className="text-black text-[16px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[16px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Testimoni
@@ -66,7 +66,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#package"
-                className="text-black text-[16px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[16px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Special Package
@@ -75,7 +75,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#sekola"
-                className="text-black text-[16px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[16px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Event
@@ -114,7 +114,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#hero"
-                className="text-black text-[18px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[18px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Beranda
@@ -123,7 +123,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#tentang"
-                className="text-black text-[18px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[18px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Tentang Coinquest
@@ -132,7 +132,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#testi"
-                className="text-black text-[18px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[18px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Testimoni
@@ -141,7 +141,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#package"
-                className="text-black text-[18px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[18px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Special Package
@@ -150,7 +150,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#sekola"
-                className="text-black text-[18px] hover:text-yellow-600"
+                className="text-[#a3a3a3] text-[18px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
                 Event

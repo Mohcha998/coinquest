@@ -64,7 +64,7 @@ export default function SchoolSection() {
           height={60}
           className="h-[40px] sm:h-[55px] lg:h-[60px] w-auto"
         />
-        <span className="text-black"
+        <span className="text-[#54ADB8]"
           style={{ fontFamily: "var(--font-moresugar)" }}
         >
           Goes To School

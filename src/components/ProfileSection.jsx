@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProfileSection() {
   return (
-    <section className="relative w-full bg-[#A5D6E6] flex flex-col lg:flex-row items-stretch min-h-[600px] overflow-hidden">
+    <section className="relative w-full bg-[#95C3D4] flex flex-col lg:flex-row items-stretch min-h-[600px] overflow-hidden">
       
       {/* === KIRI: Nama + Foto === */}
       <div className="flex-1 flex flex-col justify-center relative px-2">

@@ -57,13 +57,13 @@ export default function FormulaSection() {
         <div className="flex-1 text-center lg:text-left">
           {/* Judul */}
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-sky-500"
+            <span className="text-[#54ADB8]"
                 style={{ fontFamily: "var(--font-moresugar)" }}
             >
               52 Money Formulas
             </span>
             <br />
-            <span className="text-black"
+            <span className="text-[#5DD5E4]"
               style={{ fontFamily: "var(--font-moresugar)" }}
             >
                   For Teens
