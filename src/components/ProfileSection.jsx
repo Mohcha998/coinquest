@@ -127,6 +127,9 @@ export default function ProfileSection() {
           <br />
           Masa depan membutuhkan lebih banyak suara seperti Vern — suara yang
           menginspirasi perubahan dan meninggalkan jejak yang abadi di dunia.
+          <br/>
+          <br/>
+          <span className="text-[30px] lg:text-[40px] font-thin">@alvernialiu</span>
         </p>
       </div>
     </section>

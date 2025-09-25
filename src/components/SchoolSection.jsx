@@ -69,7 +69,14 @@ export default function SchoolSection() {
         >
           Goes To School
         </span>
+        <span className="text-[#5DD5E4]"
+          style={{ fontFamily: "var(--font-moresugar)" }}
+        >
+          Impacted over 4000+ young minds across Java
+        </span>
       </h2>
+
+     
 
       {/* Mobile: Slider */}
       <div className="flex sm:hidden overflow-x-auto gap-5 px-4 w-full snap-x snap-mandatory">
