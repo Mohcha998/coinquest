@@ -65,14 +65,44 @@ export default function SchoolSection() {
           className="h-[40px] sm:h-[55px] lg:h-[60px] w-auto"
         />
         <span className="text-[#54ADB8]"
-          style={{ fontFamily: "var(--font-moresugar)" }}
+          style={{ fontFamily: "var(--font-moresugar)",
+            textShadow: `
+              1px 1px 0 #000,
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000
+            `,
+           }}
         >
           Goes To School
         </span>
         <span className="text-[#5DD5E4]"
-          style={{ fontFamily: "var(--font-moresugar)" }}
+          style={{ fontFamily: "var(--font-moresugar)",
+            textShadow: `
+              1px 1px 0 #000,
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000
+            `,
+           }}
         >
-          Impacted over 4000+ young minds across Java
+          Impacted over {" "}
+          <span className="bg-white text-[#54ADB8] px-3 py-1 rounded-lg shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+          style={{
+            backgroundColor: "rgb(225, 244, 4, 0.6)",
+            color: "#fff404",
+            fontFamily: "var(--font-moresugar)",
+            textShadow: `
+              1px 1px 0 #000,
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000
+            `,
+          }}
+          >
+            4000+
+          </span>{" "}
+      young minds across Java
         </span>
       </h2>
 
