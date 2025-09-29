@@ -51,7 +51,7 @@ export default function VideoBox() {
         >
           <div className="relative w-full h-full">
             <img
-              src="https://img.youtube.com/vi/X4A1uFj5sVQ/maxresdefault.jpg"
+              src="https://img.youtube.com/vi/_nIhYgmZP4Y/maxresdefault.jpg"
               alt="Merry Riana Thumbnail"
               className="w-full h-full object-cover"
             />
@@ -111,7 +111,7 @@ export default function VideoBox() {
         <div className="relative w-full max-w-4xl aspect-video bg-black rounded-xl overflow-hidden">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/X4A1uFj5sVQ?si=YM0fFMoiiC2pyFJR"
+            src="https://www.youtube.com/embed/_nIhYgmZP4Y?si=gNz2SsdhYz0mTLf7"
             title="Merry Riana Video"
             frameBorder="0"
             allow="autoplay; encrypted-media"
