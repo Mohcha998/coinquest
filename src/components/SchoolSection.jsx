@@ -55,56 +55,63 @@ export default function SchoolSection() {
       </div>
 
       {/* Judul */}
-      <h2 className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 lg:gap-4 
-                     text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 sm:mb-14 px-4">
-        <Image
-          src="/images/logo_cq.png"
-          alt="Coinquest Logo"
-          width={200}
-          height={60}
-          className="h-[40px] sm:h-[55px] lg:h-[60px] w-auto"
-        />
-        <span className="text-[#54ADB8]"
-          style={{ fontFamily: "var(--font-moresugar)",
-            textShadow: `
-              1px 1px 0 #000,
-              -1px -1px 0 #000,
-              1px -1px 0 #000,
-              -1px 1px 0 #000
-            `,
-           }}
-        >
-          Goes To School
-        </span>
-        <span className="text-[#5DD5E4]"
-          style={{ fontFamily: "var(--font-moresugar)",
-            textShadow: `
-              1px 1px 0 #000,
-              -1px -1px 0 #000,
-              1px -1px 0 #000,
-              -1px 1px 0 #000
-            `,
-           }}
-        >
-          Impacted over {" "}
-          <span className="bg-white text-[#54ADB8] px-3 py-1 rounded-lg shadow-[2px_2px_0px_rgba(0,0,0,1)]"
-          style={{
-            backgroundColor: "rgb(225, 244, 4, 0.6)",
-            color: "#fff404",
-            fontFamily: "var(--font-moresugar)",
-            textShadow: `
-              1px 1px 0 #000,
-              -1px -1px 0 #000,
-              1px -1px 0 #000,
-              -1px 1px 0 #000
-            `,
-          }}
-          >
-            4000+
-          </span>{" "}
-      young minds across Java
-        </span>
-      </h2>
+      <h2
+  className="flex flex-col items-center justify-center text-center gap-2 sm:gap-3 lg:gap-4 
+             text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 sm:mb-14 px-4"
+>
+  {/* Logo + Goes To School */}
+  <div className="flex items-center justify-center gap-2">
+    <Image
+      src="/images/logo_cq.png"
+      alt="Coinquest Logo"
+      width={200}
+      height={60}
+      className="h-[40px] sm:h-[55px] lg:h-[60px] w-auto"
+    />
+    <span
+      className="text-[#54ADB8]"
+      style={{
+        fontFamily: "var(--font-moresugar)",
+        textShadow: `
+          1px 1px 0 #000,
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000
+        `,
+      }}
+    >
+      Goes To School
+    </span>
+  </div>
+
+  {/* Impacted over ... */}
+  <div
+  className="px-12 py-5 rounded-full inline-block border-2"
+  style={{
+    backgroundColor: "#A9D6E5", // biru cerah
+    borderColor: "#42C8D9", // outline biru
+    color: "#FFFFFF",
+    fontFamily: "var(--font-moresugar)",
+    fontSize: "2.5rem", // ukuran teks besar
+  }}
+>
+  Impacted over{" "}
+  <span
+    className="px-5 py-3 rounded-md mx-2"
+    style={{
+      backgroundColor: "#FFF8E1", // cream
+      color: "#E85578", // merah muda angka
+      fontFamily: "var(--font-moresugar)",
+      fontSize: "2.5rem", // ikut besar
+    }}
+  >
+    4000+
+  </span>{" "}
+  young minds across Java
+</div>
+
+</h2>
+
 
      
 
