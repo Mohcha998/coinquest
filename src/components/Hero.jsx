@@ -40,7 +40,7 @@ export default function Hero() {
     className="text-[#f29fcb]"
     style={{ fontFamily: "var(--font-moresugar)" }}
   >
-    GENERATION
+    GENERATION<br/>
   </span>{" "}
   THAT IS NOT ONLY<br />
   SMART WITH{" "}
@@ -49,8 +49,8 @@ export default function Hero() {
     style={{ fontFamily: "var(--font-moresugar)" }}
   >
     MONEY
-  </span>{" "}
-  , BUT WISE WITH{" "}
+  </span>,{" "}
+  <br/> BUT WISE WITH{" "}
   <span
     className="text-[#f9d44d] relative inline-block"
     style={{ fontFamily: "var(--font-moresugar)" }}
