@@ -86,23 +86,25 @@ export default function SchoolSection() {
 
   {/* Impacted over ... */}
   <div
-  className="px-12 py-5 rounded-full inline-block border-2"
+  className="inline-block rounded-full border-2 text-center
+             px-6 py-3 sm:px-12 sm:py-5
+             text-[1.2rem] sm:text-[2.5rem]" // font kecil di mobile, besar di desktop
   style={{
     backgroundColor: "#A9D6E5", // biru cerah
     borderColor: "#42C8D9", // outline biru
     color: "#FFFFFF",
     fontFamily: "var(--font-moresugar)",
-    fontSize: "2.5rem", // ukuran teks besar
   }}
 >
   Impacted over{" "}
   <span
-    className="px-5 py-3 rounded-md mx-2"
+    className="inline-block rounded-md mx-1 sm:mx-2
+               px-3 py-1 sm:px-5 sm:py-3
+               text-[1.2rem] sm:text-[2.5rem]"
     style={{
       backgroundColor: "#FFF8E1", // cream
       color: "#E85578", // merah muda angka
       fontFamily: "var(--font-moresugar)",
-      fontSize: "2.5rem", // ikut besar
     }}
   >
     4000+
@@ -158,6 +160,35 @@ export default function SchoolSection() {
             <p className="mt-3 text-center text-black font-bold text-lg">{item.school}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-10 flex justify-center sm:justify-start">
+        <a
+          href="https://gts.coinquest.id"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            w-[200px] sm:w-[230px] md:w-[250px] 
+            py-3 rounded-full
+            shadow-md border border-gray-400
+            font-bold text-lg sm:text-xl md:text-2xl
+            relative text-center
+            flex justify-center items-center
+          "
+          style={{
+            backgroundColor: "rgb(28, 233, 223)",
+            color: "#FFF201",
+            fontFamily: "var(--font-moresugar)",
+            textShadow: `
+              1px 1px 0 #000,
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000
+            `,
+          }}
+        >
+          REGISTER
+        </a>
       </div>
 
       {/* Modal Preview */}

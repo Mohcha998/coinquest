@@ -66,9 +66,34 @@ export default function PackageSection() {
             </ul>
 
 
-          {/* <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold italic px-8 py-4 rounded-full shadow-md border-2 border-black text-lg">
-            PESAN SEKARANG
-          </button> */}
+            <div className="mt-10 flex justify-center sm:justify-start">
+            <a
+              href="https://order.coinquest.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-[200px] sm:w-[230px] md:w-[250px] 
+                py-3 rounded-full
+                shadow-md border border-gray-400
+                font-bold text-lg sm:text-xl md:text-2xl
+                relative text-center
+                flex justify-center items-center
+              "
+              style={{
+                backgroundColor: "rgba(255, 255, 255, 0.6)",
+                color: "#FFF201",
+                fontFamily: "var(--font-moresugar)",
+                textShadow: `
+                  1px 1px 0 #000,
+                  -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px 1px 0 #000
+                `,
+              }}
+            >
+              BUY NOW
+            </a>
+            </div>
         </div>
       </div>
     </section>
