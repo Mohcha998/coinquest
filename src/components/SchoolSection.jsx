@@ -107,7 +107,7 @@ export default function SchoolSection() {
       fontFamily: "var(--font-moresugar)",
     }}
   >
-    4000+
+    5500+
   </span>{" "}
   young minds across Java
 </div>

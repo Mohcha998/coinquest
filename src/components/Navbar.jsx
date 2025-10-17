@@ -78,7 +78,7 @@ export default function Navbar() {
                 className="text-[#a3a3a3] text-[16px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
-                Event
+                Goes To School
               </a>
             </li>
           </ul>
@@ -153,7 +153,7 @@ export default function Navbar() {
                 className="text-[#a3a3a3] text-[18px] hover:text-yellow-600"
                 style={{ fontFamily: "var(--font-moresugar)" }}
               >
-                Event
+                Goes To School
               </a>
             </li>
           </ul>
